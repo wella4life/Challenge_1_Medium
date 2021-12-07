@@ -29,6 +29,7 @@ body {
   display: grid;
   align-items: center;
   min-height: 100vh;
+  background-color: var(--Light-Grayish-Blue);
 }
 a {
   text-decoration: none;
@@ -43,16 +44,138 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1300px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  grid-gap: 30px;
 }
 .left .top {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 30px;
 }
 .left .bottom {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+.box {
+  display: grid;
+  border-radius: 10px;
+}
+.daniel-clifford {
+  background-color: var(--Moderate-Violet);
+  position: relative;
+  z-index: -2;
+}
+.daniel-clifford::after {
+  content: "";
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  z-index: -1;
+}
+.jonathan-walters {
+  background-color: var(--Very-Dark-Grayish-Blue);
+}
+.jeanette-harmon {
+  background-color: var(--White);
+  box-shadow: 33px 45px 20px -52px black;
+}
+
+.patrick-abrams {
+  background-color: var(--Very-Dark-Blackish-Blue);
+}
+.kira-whittle {
+  background-color: var(--White);
+  height: 575px;
+  box-shadow: 33px 45px 20px -52px black;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.header .image {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border-radius: 50%;
+}
+.daniel-clifford .header .image,
+.patrick-abrams .header .image {
+  background-color: #a878e5;
+}
+.header img {
+  left: 2px;
+  top: 2px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+}
+.header .name {
+  margin-left: 20px;
+}
+.header .name h1 {
+  margin-bottom: 0;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.jeanette-harmon .header .name h1,
+.kira-whittle .header .name h1 {
+  color: black;
+}
+.header .name h2 {
+  margin-top: 5px;
+  color: var(--Light-Gray);
+  font-size: 14px;
+  font-weight: 500;
+}
+.daniel-clifford .header .name h2,
+.jonathan-walters .header .name h2,
+.patrick-abrams .header .name h2 {
+  opacity: 75%;
+}
+.middle {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: -10px;
+}
+.middle p {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.25;
+}
+.jeanette-harmon .middle p,
+.kira-whittle .middle p {
+  color: black;
+}
+.footer {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.footer p {
+  font-size: var(--Font-Size);
+  color: var(--Light-Gray);
+  opacity: 75%;
+  line-height: 1.4;
+}
+.jeanette-harmon .footer p,
+.kira-whittle .footer p {
+  color: black;
+}
+.kira-whittle .footer p {
+  font-size: 12px;
 }
 /*------------------------------------------------------------------End Code */
