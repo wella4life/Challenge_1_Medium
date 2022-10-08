@@ -1,6 +1,6 @@
 - Overview:
-  - [Testimonials Grid Section](#the-challenge)
-  - [https://wella4life.github.io/Challenge_1_Medium/](#links)
+  - [Testimonials Grid Section]
+  - [https://wella4life.github.io/Challenge_1_Medium/]
   - ![](images/Finished-Desktop.jpg)
   - ![](images/Finished-Mobile.jpg)
 
